@@ -1,0 +1,84 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+h1, h1, h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: v.$clr-neutral-gray;
+    font-family: v.$ff-lexenddeca-400;
+}
+
+.box{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    padding: 3.0625rem;
+    width: 20.125rem;
+    height: 27.5rem;
+    // border: 1px green solid;
+    @media (min-width: 64em) {
+        padding-right:4.75rem ;
+        height: 500px;
+        
+    } 
+
+    & img{
+        margin-bottom: 1.6875rem;
+    }
+
+    & h1{
+        margin-bottom: 1.6875rem;
+        font-size: 2.5rem;
+        font-family: v.$ff-bigShoulders-700;
+        color: v.$clr-neutral-gray;
+        text-transform: uppercase;
+    }
+
+    & p{
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: v.$clr-neutral-white;
+        @media (min-width: 64em) {
+            margin-bottom: 88px;
+            
+        } 
+    }
+}
+
+.button{
+    width: 8.9375rem;
+    height: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.03125rem;
+    background-color: hsla(0, 0%, 95%, 1);
+    border: v.$clr-neutral-gray 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out, color 1000ms ease-in-out;
+
+    &:hover{
+        background-color: hsla(0, 0%, 95%, 0);
+        color: v.$clr-neutral-gray;
+    }
+
+}
+

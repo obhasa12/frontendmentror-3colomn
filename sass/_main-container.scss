@@ -1,0 +1,46 @@
+@use 'variables' as v;
+
+.main-container{
+    margin :5.5625rem 1.5rem;
+    width: 20.125rem;
+    // height: 82.875rem;
+    // border: 3px red solid;
+    border-radius: 10px;
+    overflow: hidden;
+        @media (min-width: 64em) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 60.3125rem;
+            // height: 500px;
+            border-radius: 20px;
+            // border: 3px red solid;
+            overflow: hidden;
+        } 
+    }
+
+
+.part1{
+    background-color: v.$clr-primary-brightorange;
+
+    & button{
+        color: v.$clr-primary-brightorange;
+    }
+}
+
+.part2{
+    background-color: v.$clr-primary-darkcyan;
+
+    & button{
+        color: v.$clr-primary-darkcyan;
+    }
+}
+
+.part3{
+    background-color: v.$clr-primary-verydarkcyan;
+
+    & button{
+        color:  v.$clr-primary-verydarkcyan;
+    }
+}

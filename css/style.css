@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h1, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0deg, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.box {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 3.0625rem;
+  width: 20.125rem;
+  height: 27.5rem;
+}
+@media (min-width: 64em) {
+  .container {
+    padding-right: 4.75rem;
+    height: 500px;
+  }
+}
+.container img {
+  margin-bottom: 1.6875rem;
+}
+.container h1 {
+  margin-bottom: 1.6875rem;
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+}
+.container p {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+@media (min-width: 64em) {
+  .container p {
+    margin-bottom: 88px;
+  }
+}
+
+.button {
+  width: 8.9375rem;
+  height: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.03125rem;
+  background-color: hsl(0deg, 0%, 95%);
+  border: hsl(0deg, 0%, 95%) 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out, color 1000ms ease-in-out;
+}
+.button:hover {
+  background-color: hsla(0deg, 0%, 95%, 0);
+  color: hsl(0deg, 0%, 95%);
+}
+
+.main-container {
+  margin: 5.5625rem 1.5rem;
+  width: 20.125rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (min-width: 64em) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60.3125rem;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+.part1 {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.part1 button {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.part2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.part2 button {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.part3 {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.part3 button {
+  color: hsl(179deg, 100%, 13%);
+}/*# sourceMappingURL=style.css.map */
